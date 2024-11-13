@@ -7,10 +7,10 @@ public class Character
     public string Role { get; private set; }
     
     
-    public Action<string> PrimaryAction { get; private set; }
+    public Action<string>? PrimaryAction { get; private set; }
     
 
-    public Character(string name, int health, string role, Action<string> primaryAction)
+    public Character(string name, int health, string role, Action<string>? primaryAction = null)
     {
         Name = name;
         Health = health;
