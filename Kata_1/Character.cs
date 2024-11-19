@@ -4,17 +4,17 @@ public class Character
 {
     public string Name { get; private set; }
     public int Health { get; private set; }
-    public string Role { get; private set; }
-    
-    
-    public Action<string>? PrimaryAction { get; private set; }
-    
+    public readonly ICharacterRole Role;
 
-    public Character(string name, int health, string role, Action<string>? primaryAction = null)
+    public Character(string name, int health, ICharacterRole role)
     {
         Name = name;
         Health = health;
         Role = role;
-        PrimaryAction = primaryAction;
+    }
+
+    public void PerformAction()
+    {
+        Role.PerformRoleSpecificAction(this);
     }
 }

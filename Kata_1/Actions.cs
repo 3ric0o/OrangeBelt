@@ -1,17 +1,14 @@
 namespace OrangeBelt;
 
-public static class Actions
+public abstract class Actions
 {
-    
-    public static readonly Action<string>? Attack = name =>
+    public static readonly Action<string> Attack = name =>
     {
-        Console.WriteLine($"{name} performs a powerful attack!");
+        Console.WriteLine($"{name} performs a powerful attack!\n");
     };
     
-    
-    public static readonly Action<string>? Heal = name =>
+    public static readonly Action<string> Heal = name =>
     {
-        Console.WriteLine($"{name} performs a powerful healing spell!");
+        Console.WriteLine($"{name} performs a powerful healing spell!\n");
     };
-    
 }

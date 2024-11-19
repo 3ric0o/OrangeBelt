@@ -1,0 +1,15 @@
+B:\Projects\OrangeBelt\Kata_2\bin\Debug\net8.0\Kata_2.exe
+B:\Projects\OrangeBelt\Kata_2\bin\Debug\net8.0\Kata_2.deps.json
+B:\Projects\OrangeBelt\Kata_2\bin\Debug\net8.0\Kata_2.runtimeconfig.json
+B:\Projects\OrangeBelt\Kata_2\bin\Debug\net8.0\Kata_2.dll
+B:\Projects\OrangeBelt\Kata_2\bin\Debug\net8.0\Kata_2.pdb
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.GeneratedMSBuildEditorConfig.editorconfig
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.AssemblyInfoInputs.cache
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.AssemblyInfo.cs
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.csproj.CoreCompileInputs.cache
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.sourcelink.json
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.dll
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\refint\Kata_2.dll
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.pdb
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\Kata_2.genruntimeconfig.cache
+B:\Projects\OrangeBelt\Kata_2\obj\Debug\net8.0\ref\Kata_2.dll

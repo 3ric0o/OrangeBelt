@@ -1,37 +1,39 @@
-﻿namespace OrangeBelt;
+﻿
+namespace OrangeBelt;
 
-internal abstract class Program
-{
-    private static void Main()
+    public class Program
     {
-        var characters = new List<Character>
+        public static void Main()
         {
-            new ("Bran", 30, "Warrior"),
-            new ("Arin", 90, "Warrior", Actions.Attack),
-            new ("Cara", 70, "Warrior", Actions.Attack),
-            new ("Dalia", 40, "Healer", Actions.Heal),
-        };
-        Console.WriteLine("Starting actions based on character health...\n");
+            var warriorRole = new WarriorRole();
+            var healerRole = new HealerRole();
+            
+            var warrior = new Character("Bran", 30, warriorRole); 
+            var healer = new Character("Dalia", 60, healerRole);  
+            var healer2 = new Character("Arin", 90, healerRole); 
+            var warrior2 = new Character("Cara", 70, warriorRole);
 
-        foreach (var character in characters)
-        {
-            if (character.PrimaryAction == null)
+            var characters = new List<Character> { warrior, healer, healer2, warrior2 };
+            
+            foreach (var character in characters.OrderBy(c => c.Health))
             {
-                continue;
+                if (character.Health < 50 && character.Role == warriorRole)
+                {
+                    Console.WriteLine($"\n{character.Name} is attacking first due to low health! Health: {character.Health}");
+                    character.PerformAction();
+                }
             }
             
-            if (character.Health < 50)
+            foreach (var healerCharacter in characters.Where(healerCharacter => healerCharacter.Role == healerRole))
             {
-                Console.WriteLine($"{character.Name} is attacking first due to low health! Health: {character.Health}");
+                var healerRoleInstance = healerCharacter.Role as HealerRole;
+                healerRoleInstance?.HealLowestHealthCharacter(characters, healerCharacter);
             }
-            else
+            
+            Console.WriteLine("\nAdditional character actions based on role:");
+            foreach (var character in characters)
             {
-                Console.WriteLine(character.Role == "Healer"
-                        ? $"{character.Name} is prioritizing healing for the character with the lowest health."
-                        : $"{character.Name} charges with a fierce attack!");
+                character.PerformAction();
             }
-
-            character.PrimaryAction?.Invoke(character.Name);
         }
     }
-}
