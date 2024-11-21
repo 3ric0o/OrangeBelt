@@ -28,6 +28,7 @@ public class AbilityContainer<T> : IAbilityExecutor where T : IAbility
         }
     }
 
+    
     public void Execute(IAbility ability)
     {
         if (_abilities.Contains((T)ability))

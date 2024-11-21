@@ -1,0 +1,15 @@
+B:\Projects\OrangeBelt\Kata_5\bin\Debug\net8.0\Kata_5.exe
+B:\Projects\OrangeBelt\Kata_5\bin\Debug\net8.0\Kata_5.deps.json
+B:\Projects\OrangeBelt\Kata_5\bin\Debug\net8.0\Kata_5.runtimeconfig.json
+B:\Projects\OrangeBelt\Kata_5\bin\Debug\net8.0\Kata_5.dll
+B:\Projects\OrangeBelt\Kata_5\bin\Debug\net8.0\Kata_5.pdb
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.GeneratedMSBuildEditorConfig.editorconfig
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.AssemblyInfoInputs.cache
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.AssemblyInfo.cs
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.csproj.CoreCompileInputs.cache
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.sourcelink.json
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.dll
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\refint\Kata_5.dll
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.pdb
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\Kata_5.genruntimeconfig.cache
+B:\Projects\OrangeBelt\Kata_5\obj\Debug\net8.0\ref\Kata_5.dll
