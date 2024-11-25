@@ -9,7 +9,15 @@ public class CharacterManager
     {
         _logger = logger;
     }
-
+    
+    
+    public Enemy CreateEnemy(string name, int health)
+    {
+        var enemy = new Enemy(name, health, _logger);
+        _characters.Add(enemy);
+        return enemy;
+    }
+    
     public Warrior CreateWarrior(string name, int health)
     {
         var warrior = new Warrior(name, health, _logger);
@@ -24,6 +32,18 @@ public class CharacterManager
         return healer;
     }
     
+    public Mage CreateMage(string name, int health)
+    {
+        var mage = new Mage(name, health, _logger);
+        _characters.Add(mage);
+        return mage;
+    }
+
+    public void CharactersInfo()
+    {
+        _characters.ForEach(character => _logger.Log($"{character.Name}'s health: {character.Health}"));
+        _logger.Log("");
+    }
     public List<Character> GetAllCharacters()
     {
         return _characters;

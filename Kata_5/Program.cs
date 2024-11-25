@@ -6,7 +6,7 @@ class Program
     {
         ILogger logger = new Logger();
         CharacterManager characterManager = new CharacterManager(logger);
-        Game game = new Game(logger, characterManager);
+        Game game = new Game(characterManager);
 
         game.StartGame();
     }

@@ -1,6 +1,6 @@
 namespace Kata_5;
 
-public class EventSystem
+public abstract class EventSystem
 {
     public static event Action<string, int>? HealthChanged;
     public static event Action<string, string>? SpecialActionPerformed;

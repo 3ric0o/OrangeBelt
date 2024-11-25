@@ -2,14 +2,21 @@ namespace Kata_5;
 
 public class Character
 {
-    public string Name { get; private set; }
-    public int Health;
+    public string Name { get; }
+    private int _health;
+    private readonly int _maxHealth;
     protected readonly ILogger Logger;
         
+    public int Health
+    {
+        get => _health;
+        set => _health = value > _maxHealth ? _maxHealth : value;
+    }
     protected Character(string name, int health, ILogger logger)
     {
         Name = name;
-        Health = health;
+        _maxHealth = health;
+        _health = health;
         Logger = logger;
             
          EventSystem.SubscribeToHealthChanged(OnHealthChanged);
